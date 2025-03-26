@@ -1,0 +1,196 @@
+<!-- Extends default Bootstrap Italia template -->
+{% extends 'bootstrap-italia-base.html' %}
+
+{% load static %}
+
+<!-- Page Title -->
+{% block page_title %}
+Fondazione Università Magna Grecia
+{% endblock page_title %}
+
+<!-- My custom scss sheet -->
+{% block extra_head %}
+<link rel="shortcut icon" href="{% static 'images/favicon/favicon-32x32.png' %}">
+<link rel="stylesheet" href="{% static 'css/fumg-style.css' %}" type="text/css" />
+{% endblock extra_head %}
+
+<!-- URL link top left -->
+{% block header_slim_org_url %}
+https://www.fondazioneumg.it
+{% endblock header_slim_org_url %}
+
+<!-- Name top left -->
+{% block header_slim_org_name %}
+Fondazione Università Magna Grecia
+{% endblock header_slim_org_name %}
+
+<!-- Mobile slim_org_name -->
+{% block header_slim_mobile_org_name %}
+Fondazione Università Magna Grecia
+{% endblock header_slim_mobile_org_name %}
+
+{% block header_center_social %}
+<div class="it-socials d-none d-md-flex">
+    <span>Seguici su</span>
+    <ul>
+        <li>
+            <a href="https://it-it.facebook.com/pages/category/College---University/Fondazione-Universit%C3%A0-Magna-Graecia-di-Catanzaro-1535235663370193/"
+               aria-label="Facebook"
+               target="_blank">
+                <svg class="icon">
+                    <use xlink:href="{% static 'svg/sprites.svg' %}#it-facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://mobile.twitter.com/FondazioneUmg"
+               aria-label="Twitter"
+               target="_blank">
+                <svg class="icon">
+                <use xlink:href="{% static 'svg/sprites.svg' %}#it-twitter"></use>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/channel/UCb81mRGB_DQssOxHqu4dERA"
+               target="_blank"
+               aria-label="YouTube">
+                <svg class="icon">
+                <use xlink:href="{% static 'svg/sprites.svg' %}#it-youtube"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock header_center_social %}
+
+<!-- Make empty areas -->
+{% block header_mobile_arrow %}{% endblock header_mobile_arrow %}
+{% block header_mobile_slim_menu %}{% endblock header_mobile_slim_menu %}
+
+{% block header_center_url %}/{% endblock header_center_url %}
+
+<!-- Logo in Header -->
+{% block header_center_logo %}
+<div class="me-3">
+    <image src="{% static 'images/logo.png' %}" style="width: 80px"/>
+</div>
+{% endblock header_center_logo %}
+
+<!-- Organization name in Header -->
+{% block header_center_org_name %}
+Fondazione Università<br>Magna Grecia
+{% endblock header_center_org_name %}
+
+<!-- Organization description in Header -->
+{% block header_center_org_subname %}
+{% endblock header_center_org_subname %}
+
+<!-- Logo in Footer -->
+{% block footer_logo %}
+{% endblock footer_logo %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_name %}
+Fondazione Università Magna Grecia
+{% endblock footer_org_name %}
+
+<!-- Organization name in Footer -->
+{% block footer_org_subname %}
+{% endblock footer_org_subname %}
+
+{% block footer_contacts_section %}
+<section class="py-4 border-white border-top">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a href="#" title="Vai alla pagina: Contatti">Contatti</a></h4>
+            <p>
+                <strong>Fondazione Università Magna Graecia</strong>
+                <br>
+                Campus Universitario “Salvatore Venuta”
+                <br>
+                Viale Europa - Edificio Secondo lotto, Residenze universitarie – Loc. Germaneto
+                <br>
+                88100 CATANZARO (ITALY)
+                <br>
+                CF: 97067040796
+                <br>
+                P.Iva: 03267910796
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-4 pb-2">
+            <h4><a href="#" title="Vai alla pagina: Lorem Ipsum">Link Utili</a></h4>
+            <div class="link-list-wrapper">
+                <ul class="footer-list link-list clearfix">
+                    <li>
+                        <a class="list-item"
+                           href="https://www.fondazioneumg.it/servizi/Menu/dinamica.aspx?ID=17401"
+                           title="Vai alla pagina: Amministrazione Trasparente">
+                           Amministrazione Trasparente
+                        </a>
+                    </li>
+                    <li>
+                        <a class="list-item"
+                           href="https://www.fondazioneumg.it/servizi/Menu/dinamica.aspx?idSezione=18971&idArea=18972&idCat=18979&ID=18979&TipoElemento=categoria"
+                           title="Vai alla pagina: Bandi e Contratti">
+                           Bandi e Contratti
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 pb-2">
+            <div class="pb-2">
+                <h4><a href="#" title="Vai alla pagina: Seguici su">Seguici su</a></h4>
+                <ul class="list-inline social text-start">
+                    <li class="list-inline-item">
+                        <a class="p-2 text-white"
+                           href="https://it-it.facebook.com/pages/category/College---University/Fondazione-Universit%C3%A0-Magna-Graecia-di-Catanzaro-1535235663370193/"
+                           target="_blank">
+                            <svg class="icon icon-sm icon-white align-top">
+                                <use xlink:href="{% static 'svg/sprites.svg' %}#it-facebook"></use>
+                            </svg><span class="visually-hidden">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="p-2 text-white"
+                           href="https://twitter.com/UnicalPortale"
+                           target="_blank">
+                            <svg class="icon icon-sm icon-white align-top">
+                                <use xlink:href="{% static 'svg/sprites.svg' %}#it-twitter"></use>
+                            </svg><span class="visually-hidden">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="p-2 text-white"
+                           href="https://www.youtube.com/channel/UCb81mRGB_DQssOxHqu4dERA"
+                           target="_blank">
+                            <svg class="icon icon-sm icon-white align-top">
+                                <use xlink:href="{% static 'svg/sprites.svg' %}#it-youtube"></use>
+                            </svg><span class="visually-hidden">YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock footer_contacts_section %}
+
+{% block footer_bottom_content %}
+<h3 class="visually-hidden">Sezione Link Utili</h3>
+<ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+    <li class="list-inline-item">
+        <a href="https://www.fondazioneumg.it/servizi/Menu/dinamica.aspx?idSezione=3503&idArea=16715&idCat=16716&ID=16716&TipoElemento=categoria"
+           title="Note Legali">
+           Note legali
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a href="https://www.fondazioneumg.it/servizi/Menu/dinamica.aspx?idSezione=3503&idArea=16715&idCat=16719&ID=16719&TipoElemento=categoria"
+           title="Protezione dei dati">
+           Privacy
+        </a>
+    </li>
+</ul>
+{% endblock footer_bottom_content %}
