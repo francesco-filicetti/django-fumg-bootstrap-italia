@@ -1,8 +1,8 @@
-Template Django conforme a linee guida AGID per Fondazione Università Magna Grecia
-----------------------------------------------------------------------------------
+Template Django conforme a linee guida AGID per Fondazione Università Magna Graecia
+-----------------------------------------------------------------------------------
 
 Template grafico per il framework Python Django, per applicazioni
-della Fondazione Università Magna Grecia, basato sulla libreria
+della Fondazione Università Magna Graecia, basato sulla libreria
 [Bootstrap Italia](https://italia.github.io/bootstrap-italia/).
 
 L'app estende [design-django-theme](https://github.com/italia/design-django-theme).
@@ -68,7 +68,7 @@ Esempio di base-setup.html
 
 <!-- Page Title -->
 {% block page_title %}
-Fondazione Università Magna Grecia
+Fondazione Università Magna Graecia
 {% endblock page_title %}
 
 <!-- My custom css sheet -->
@@ -83,12 +83,12 @@ https://www.fondazioneumg.it
 
 <!-- Name top left -->
 {% block header_slim_org_name %}
-Fondazione Università Magna Grecia
+Fondazione Università Magna Graecia
 {% endblock header_slim_org_name %}
 
 <!-- Mobile slim_org_name -->
 {% block header_slim_mobile_org_name %}
-Fondazione Università Magna Grecia
+Fondazione Università Magna Graecia
 {% endblock header_slim_mobile_org_name %}
 
 <!-- Make empty areas -->
@@ -102,7 +102,7 @@ Fondazione Università Magna Grecia
 
 <!-- Organization name in Header -->
 {% block header_center_org_name %}
-Fondazione Università Magna Grecia
+Fondazione Università Magna Graecia
 {% endblock header_center_org_name %}
 
 <!-- Organization description in Header -->
@@ -115,7 +115,7 @@ Fondazione Università Magna Grecia
 
 <!-- Organization name in Footer -->
 {% block footer_org_name %}
-Fondazione Università Magna Grecia
+Fondazione Università Magna Graecia
 {% endblock footer_org_name %}
 
 <!-- Organization name in Footer -->

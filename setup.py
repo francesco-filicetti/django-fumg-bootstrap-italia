@@ -13,7 +13,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='Apache 2.0',
-    description="Django theme for Fondazione Università Magna Grecia based on Bootstrap Italia theme",
+    description="Django theme for Fondazione Università Magna Graecia based on Bootstrap Italia theme",
     long_description=README,
     long_description_content_type='text/markdown',
     url='',
